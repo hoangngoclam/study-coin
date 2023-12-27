@@ -1,4 +1,3 @@
-
 export const status = [
   {
     title: 'fair launch',
@@ -31,4 +30,4 @@ export const status = [
     background: '#f2fdf6',
     color: '#e6f1ea',
   },
-]
+];
