@@ -236,7 +236,7 @@ const RightBlock = () => {
           <td>
             <span>START TIME</span>
             <br />
-            03:14:30:39
+            {/* 03:14:30:39 */}
           </td>
         </tr>
         <tr>
@@ -251,7 +251,14 @@ const RightBlock = () => {
         </tr>
         <tr>
           <td colSpan={2}>
-            <span>BUSD SPENT</span> <br />0 BUSD
+            <span>MAXIMUM BUY</span> <br />
+            1000000 STY
+          </td>
+        </tr>
+        <tr>
+          <td colSpan={2}>
+            <span>Token to sale</span> <br />
+            100000000.0
           </td>
         </tr>
         <tr>
@@ -323,7 +330,8 @@ const RightBlock = () => {
         <tr>
           <td>
             <span>CURRENT RATE:</span>
-            <br />1 BUSD = 200 STY3
+            <br />
+            0.000001BNB/STY
           </td>
         </tr>
       </table>

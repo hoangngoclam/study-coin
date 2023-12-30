@@ -1,17 +1,17 @@
 export const dataTable = [
   {
     title: 'Token Name',
-    data: 'STUDILY3',
+    data: 'STUDILY',
   },
   {
     title: 'Token Symbol',
-    data: 'STY3',
+    data: 'STY',
   },
   {
     title: 'Token Decimals',
-    data: '9',
+    data: '18',
   },
-]
+];
 
 export const titleTable = ['Lock Created', 
   'Unlock Time', 'Link'
