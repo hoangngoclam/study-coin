@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { dataTable } from './setting';
 
 const Project = () => {
