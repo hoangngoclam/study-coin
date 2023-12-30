@@ -204,8 +204,11 @@ const RightBlock = () => {
     quantity,
   ]);
 
-  const onMoneyChange = (e: any) => {
-    const value = parseInt(e.target.value);
+  const onMoneyChange = (value: number | null) => {
+    if (!value) {
+      return;
+    }
+
     if (value > maxClaimable) {
       setQuantity(maxClaimable);
     } else if (value < 1) {
@@ -252,6 +255,25 @@ const RightBlock = () => {
           </td>
         </tr>
         <tr>
+          {' '}
+          {(claimConditions.data &&
+            claimConditions.data.length > 0 &&
+            activeClaimCondition.isError) ||
+            (activeClaimCondition.data &&
+              activeClaimCondition.data.startTime > new Date() && (
+                <p>Drop is starting soon. Please check back later.</p>
+              ))}
+          {claimConditions.data?.length === 0 ||
+            (claimConditions.data?.every(
+              (cc) => cc.maxClaimableSupply === '0'
+            ) && (
+              <p>
+                This drop is not ready to be minted yet. (No claim condition
+                set)
+              </p>
+            ))}
+        </tr>
+        <tr>
           {isLoading ? (
             <td colSpan={2}>Loading...</td>
           ) : (
@@ -267,9 +289,11 @@ const RightBlock = () => {
                 id="money-input"
                 type="number"
                 value={quantity}
-                onChange={onMoneyChange}
+                onChange={(value: number | null) => {
+                  onMoneyChange(value);
+                }}
                 placeholder="Enter amount to claim"
-                className='mb-1 mt-1'
+                className="mb-1 mt-1"
               />
               <Web3Button
                 theme="light"
