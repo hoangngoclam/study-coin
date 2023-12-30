@@ -5,14 +5,21 @@ const Project = () => {
     <div className="project-contain">
       <div className="header">
         <p>
-          https://dedemy.tech https://dedemy.tech https://dedemy.tech
-          https://dedemy.tech{' '}
+          Studily is eLearning has become quite a trend these days, especially
+          after the pandemic hit our society hard. We are witnessing a change in
+          the way our information system works. Are we shifting toward a fully
+          digital education, and what are the benefits of moving to Web 3.0.
         </p>
+        <b>1. Great eLearning Data Integrity</b>
         <p>
-          https://dedemy.tech https://dedemy.tech https://dedemy.tech
-          https://dedemy.tech{' '}
+          When it comes to data integrity, blockchain technology is an excellent
+          way to make sure that all the information you need is provided.
+          Instead of a single center of truth, blockchains ensure that multiple
+          blockchain-based data streams are resilient and verified to ensure
+          data doesn't fall into the wrong hands. This means your learning
+          materials will be verified and not tampered with. The security of the
+          data is very important for the success of any student program.
         </p>
-        <p>https://dedemy.tech https://dedemy.tech https://dedemy.tech</p>
       </div>
       <div className="table-tab-left mt-3">
         <table>

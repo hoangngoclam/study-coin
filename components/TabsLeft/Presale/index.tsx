@@ -4,11 +4,11 @@ import Table2 from './Table2';
 
 const Presale = () => {
 
-  return <div className='pre-sale-contain'>
-    <Table1 />
-    <Table2 />
-    <Table3 />
-  </div>;
+  return (
+    <div className="pre-sale-contain">
+      <Table1 />
+    </div>
+  );
 }
 
 export default Presale;

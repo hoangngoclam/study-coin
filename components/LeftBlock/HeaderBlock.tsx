@@ -26,12 +26,6 @@ const HeaderBlock = () => {
               />
             ))}
           </div>
-          <a
-            className="block"
-            href="https://dedemy.tech"
-            target="_blank"
-            rel="noreferrer nofollow"
-          ></a>
         </Flex>
       </Col>
       <Col span={6} pull={18}>
